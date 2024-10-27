@@ -5,7 +5,10 @@
   "author": "Esdras Silva",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && babel src --out-dir dist/maticx --extensions '.ts' --copy-files --no-copy-ignored && cp package.lib.json dist/package.json",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:es6": "tsc",
+    "build:es5": "babel src --out-dir dist/lib/es5 --extensions '.ts' --copy-files --no-copy-ignored && cp package.lib.json dist/package.json",
+    "build": "rm -rf dist && npm run build:types && npm run build:es5 && npm run build:es6 && cp package.lib.json dist/package.json",
     "test": "jest"
   },
   "devDependencies": {

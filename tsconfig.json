@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "module": "ES6",
-    "target": "ES5",
+    "target": "ES6",
     "lib": ["ES2021", "DOM"],
     "declaration": true,
+    "declarationDir": "./dist/lib/types",
     "outDir": "./dist/lib/es6",
     "moduleResolution": "node",
     "skipLibCheck": true

@@ -1,9 +1,10 @@
 {
   "name": "@limz/maticx",
-  "version": "0.0.2",
+  "version": "0.0.9",
   "description": "A set of mathematics utilities",
   "main": "lib/es5/index.js",
   "module": "lib/es6/index.js",
+  "types": "lib/types/index.d.ts",
   "sideEffects": false,
   "respository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/esdraslimasilva/maticx/issues"
   },
-  "homepage": "https://github.com/esdraslimasilva/maticx#readme"
+  "homepage": "https://github.com/esdraslimasilva/maticx#readme",
+  "dependencies": {
+    "core-js": "^3.38.1"
+  }
 }
