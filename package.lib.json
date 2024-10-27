@@ -1,0 +1,20 @@
+{
+  "name": "@els/maticx",
+  "version": "0.0.1",
+  "description": "A set of mathematics utilities",
+  "main": "lib/es5/index.js",
+  "module": "lib/es6/index.js",
+  "sideEffects": false,
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/esdraslimasilva/maticx.git"
+  },
+  "files": ["lib", "CHANGELOG.md", "LISCENSE", "package.json", "README.md"],
+  "keywords": ["javascript", "math", "utils", "utilities"],
+  "author": "Esdras Silva",
+  "liscense": "MIT",
+  "bugs": {
+    "url": "https://github.com/esdraslimasilva/maticx/issues"
+  },
+  "homepage": "https://github.com/esdraslimasilva/maticx#readme"
+}
