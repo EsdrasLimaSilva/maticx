@@ -5,9 +5,20 @@
   "author": "Esdras Silva",
   "license": "MIT",
   "scripts": {
-    "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+    "build": "rm -rf dist && babel src --out-dir dist/maticx --extensions '.ts' --copy-files --no-copy-ignored && cp package.lib.json dist/package.json",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/node": "^20.17.1",
+    "core-js": "^3.38.1"
   }
 }
